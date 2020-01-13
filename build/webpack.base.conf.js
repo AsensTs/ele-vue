@@ -36,11 +36,18 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      '@style': resolve('src/assets/styles'),
+      '@components': resolve('src/components')
     }
   },
   module: {
     rules: [
       ...(config.dev.useEslint ? [createLintingRule()] : []),
+      {
+        test: /\.styl$/,
+        loader: 'style-loader!css-loader!stylus-loader',
+        include: []
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
