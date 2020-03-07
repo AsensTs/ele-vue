@@ -5,7 +5,7 @@
       <el-row class="index-eRec-nav-r2">
         <el-col :span="6" class="index-eNav-z"><span>综合排序</span><i class="el-icon-caret-bottom"></i></el-col>
         <el-col :span="6" class="index-eNav-z"><span>距离最近</span></el-col>
-        <el-col :span="6" class="index-eNav-z"><i class="iconfont">&#xe6bb;</i><span>会员领红包</span></el-col>
+        <el-col :span="6" class="index-eNav-z"><i class="vip-icon iconfont">&#xe6bb;</i><span>会员领红包</span></el-col>
         <el-col :span="6" class="index-eNav-z"><span>筛选</span><i class="iconfont">&#xe615;</i></el-col>
       </el-row>
     </el-container>
@@ -52,4 +52,6 @@ export default {
     font-size: 3.666666vw
     .index-eNav-z
       text-align: center
+    .vip-icon
+      font-size: .2vw
 </style>

@@ -21,6 +21,8 @@ export default {
       height: .36rem
       margin: .05rem .15rem .09rem .15rem
       text-align: center
+      justify-content: center
+      align-items: center
       background: #fff
       color: #808080
     .iSearch-eFDx21 span

@@ -1,0 +1,35 @@
+$fontBold =  bold
+$bgColor = linear-gradient(left, #0af, #0085ff)
+$textColor = #797272
+
+// ---字体风格
+$a_family = "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", "Tahoma", "宋体", "SimSun", "sans-serif"
+$a_family_yh = "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", "Tahoma", "SimSun", "sans-serif"
+
+$designRatio = 2
+$rootSize = 16
+$designWidth = 750
+// ---以iphone6尺寸作为基准px转vw
+vw(px)
+  ((px / $designWidth) * 100)vw
+// ---以2被设计稿作为基准px转rem
+rem(px)
+  (px / $rootSize / $designRatio * 1)rem
+rootVw()
+  ($rootSize / $designWidth * $designRatio * 100)vmin
+
+// ---根据dpr来选择图片
+bg-image($url)
+  background-image: url($url + '@2x.png')
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3)
+    background-image: url($url + '@3x.png')
+
+// ---显示or隐藏
+_display(arg)
+  display arg
+// ---隐藏
+_hidden()
+  display none
+// ---显示
+_show()
+  display block

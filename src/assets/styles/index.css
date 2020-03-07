@@ -1,3 +1,8 @@
 @import './reset.css';
 @import './border.css';
 @import './iconfont/iconfont.css';
+
+.iconSize{font-size: 2vw}
+.i-caret {font-size: 1vw}
+.i-location {font-size: 6vw}
+.city-header-return {cursor: pointer}

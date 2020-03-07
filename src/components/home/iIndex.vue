@@ -2,9 +2,9 @@
 <el-container direction="vertical">
   <el-row class="iIndex-eKJL1">
     <el-col :span="24">
-      <div class="iIndex-eJKN2">
-        <div class="iIndex-eJKF0"><i class="iconfont">&#xe734;</i><span>index</span><i class="i-caret el-icon-caret-bottom"></i></div>
-      </div>
+      <router-link :to="{name: 'Index'}" class="iIndex-eJKN2">
+        <div class="iIndex-eJKF0"><i class="iconfont">&#xe734;</i><span>{{ this.$store.getters.getCity }}</span><i class="i-caret el-icon-caret-bottom"></i></div>
+      </router-link>
     </el-col>
   </el-row>
 </el-container>
@@ -12,7 +12,12 @@
 
 <script>
 export default {
-  name: 'iHeader'
+  name: 'iHeader',
+  data () {
+    return {
+      cityIndex: '北京'
+    }
+  }
 }
 </script>
 

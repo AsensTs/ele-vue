@@ -1,12 +1,12 @@
 <template>
   <el-container direction="vertical" class="index-1ECZ3_0">
     <el-row type="flex" justify="space-between" class="index-1y1Q5_0">
-        <el-col :span="6" class="activity-left">
+        <el-col :span="7" class="activity-left">
             <h3>品质套餐</h3>
             <p>搭配齐全吃得好</p>
             <p>立即抢购 ></p>
         </el-col>
-        <el-col :span="18" class="activity-right">
+        <el-col :span="17" class="activity-right">
             <img src="https://cube.elemecdn.com/e/ee/df43e7e53f6e1346c3fda0609f1d3png.png?x-oss-process=image/format,webp/resize,w_282,h_188,m_fixed">
         </el-col>
     </el-row>
@@ -46,7 +46,7 @@ strong
         color: #9e9e9e
     .activity-right img
       float: right
-      width: 40%
+      width: 50%
       max-width: 100%
       position: relative
       right: 3vw
