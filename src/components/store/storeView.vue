@@ -1,7 +1,5 @@
 <template>
-<div>
   <storeHeader></storeHeader>
-</div>
 </template>
 
 <script>
