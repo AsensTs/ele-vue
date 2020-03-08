@@ -1,12 +1,17 @@
 <template>
+<div>
   <storeHeader></storeHeader>
+  <storeNav></storeNav>
+</div>
 </template>
 
 <script>
 import storeHeader from './storeHeader'
+import storeNav from './storeNav'
 export default {
   components: {
-    storeHeader
+    storeHeader,
+    storeNav
   }
 }
 </script>
